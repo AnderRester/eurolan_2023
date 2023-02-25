@@ -17,6 +17,7 @@ body {
     color: #e7e7e7;
     overflow-x: hidden !important;
 }
+
 a {
     color: #c2c2c2 !important;
 }
@@ -73,6 +74,7 @@ a {
     background: radial-gradient(ellipse at bottom, #1b2735, #090a0f);
     font-weight: 300;
 }
+
 .all {
     display: flex;
     perspective: 10px;
@@ -83,21 +85,26 @@ a {
     justify-content: center;
     transform-style: preserve-3d;
 }
+
 .all:hover {
     perspective: 1000px;
     transition: all 1.3s ease-in;
     transform: perspective(10000px) rotateX(0deg);
 }
+
 .all:hover .text {
     opacity: 1;
 }
+
 .all:hover > div {
     opacity: 1;
     transition-delay: 0s;
 }
+
 .all:hover .explainer {
     opacity: 0;
 }
+
 .left,
 .center,
 .right,
@@ -120,6 +127,7 @@ a {
     cursor: pointer;
     background-blend-mode: color-burn;
 }
+
 .left:hover,
 .center:hover,
 .right:hover,
@@ -128,6 +136,7 @@ a {
     box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.6);
     background-color: #ccf;
 }
+
 .text {
     transform: translateY(30px);
     opacity: 0;
@@ -139,26 +148,32 @@ a {
     color: #fff;
     text-shadow: 0 0 5px rgba(100, 100, 255, 0.6);
 }
+
 .lefter {
     transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
     background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/organization-512.png);
 }
+
 .left {
     transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
     background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/creative_draw-512.png);
 }
+
 .center {
     opacity: 1;
     background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/app_window-512.png);
 }
+
 .right {
     transform: translateX(30px) translateZ(-25px) rotateY(5deg);
     background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/cloud_weather-512.png);
 }
+
 .righter {
     transform: translateX(60px) translateZ(-50px) rotateY(10deg);
     background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/search-512.png);
 }
+
 .explainer {
     font-weight: 300;
     font-size: 2rem;
@@ -174,6 +189,7 @@ a {
     justify-content: center;
     align-items: center;
 }
+
 .ref {
     background-color: #000;
     background-image: linear-gradient(to bottom, #d80, #c00);
@@ -187,6 +203,7 @@ a {
     text-decoration: none;
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 }
+
 .ref::first-letter {
     font-size: 12px;
 }
@@ -245,26 +262,33 @@ img {
 .hidden {
     display: none;
 }
+
 h3 {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
 }
+
 .a {
     transform: rotateY(0deg) translateZ(366px);
 }
+
 .b {
     transform: rotateY(45deg) translateZ(366px);
 }
+
 .c {
     transform: rotateY(90deg) translateZ(366px);
 }
+
 .d {
     transform: rotateY(135deg) translateZ(366px);
 }
+
 .e {
     transform: rotateY(180deg) translateZ(366px);
 }
+
 .f {
     transform: rotateY(225deg) translateZ(366px);
 }
@@ -286,13 +310,16 @@ h3 {
     cursor: pointer;
     transition: box-shadow 0.1s, top 0.1s;
 }
+
 .next:hover,
 .prev:hover {
     color: #000;
 }
+
 .next {
     right: 0;
 }
+
 .prev {
     left: 0;
 }
@@ -325,14 +352,14 @@ h3 {
 ::-webkit-scrollbar-thumb {
     background-color: #f90a23;
     background-image: -webkit-linear-gradient(
-        45deg,
-        rgba(255, 255, 255, 0.2) 25%,
-        transparent 25%,
-        transparent 50%,
-        rgba(255, 255, 255, 0.2) 50%,
-        rgba(255, 255, 255, 0.2) 75%,
-        transparent 75%,
-        transparent
+            45deg,
+            rgba(255, 255, 255, 0.2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, 0.2) 50%,
+            rgba(255, 255, 255, 0.2) 75%,
+            transparent 75%,
+            transparent
     );
 }
 
@@ -1048,15 +1075,20 @@ label {
         transform: rotate(30deg) translate(0px, 0px);
     }
 }
+
 .sponsors_container {
     display: flex;
-    /* display: block; // FOR MOBILE */
     justify-content: center;
     align-items: center;
+    animation-name: test;
+}
+
+@media (min-width: 350px) and (max-width:800px){
+    .sponsors_container {
+        display: block;
 }
 /*Finish sponsors*/
 
-/* Sponsors Сontainer */
 
 /*Footer*/
 .site-footer {
@@ -1066,13 +1098,16 @@ label {
     line-height: 24px;
     color: #737373;
 }
+
 .site-footer hr {
     border-top-color: #bbb;
     opacity: 0.5;
 }
+
 .site-footer hr.small {
     margin: 20px 0;
 }
+
 .site-footer h6 {
     color: #fff;
     font-size: 16px;
@@ -1080,35 +1115,44 @@ label {
     margin-top: 5px;
     letter-spacing: 2px;
 }
+
 .site-footer a {
     color: #737373;
 }
+
 .site-footer a:hover {
     color: #3366cc;
     text-decoration: none;
 }
+
 .footer-links {
     padding-left: 0;
     list-style: none;
 }
+
 .footer-links li {
     display: block;
 }
+
 .footer-links a {
     color: #737373;
 }
+
 .footer-links a:active,
 .footer-links a:focus,
 .footer-links a:hover {
     color: #3366cc;
     text-decoration: none;
 }
+
 .footer-links.inline li {
     display: inline-block;
 }
+
 .site-footer .social-icons {
     text-align: right;
 }
+
 .site-footer .social-icons a {
     width: 40px;
     height: 40px;
@@ -1118,32 +1162,39 @@ label {
     border-radius: 100%;
     background-color: #33353d;
 }
+
 .copyright-text {
     margin: 0;
 }
+
 @media (max-width: 991px) {
     .site-footer [class^='col-'] {
         margin-bottom: 30px;
     }
 }
+
 @media (max-width: 767px) {
     .site-footer {
         padding-bottom: 0;
     }
+
     .site-footer .copyright-text,
     .site-footer .social-icons {
         text-align: center;
     }
 }
+
 .social-icons {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
 }
+
 .social-icons li {
     display: inline-block;
     margin-bottom: 4px;
 }
+
 .social-icons li.title {
     margin-right: 15px;
     text-transform: uppercase;
@@ -1151,6 +1202,7 @@ label {
     font-weight: 700;
     font-size: 13px;
 }
+
 .social-icons a {
     background-color: #eceeef;
     color: #818a91;
@@ -1166,35 +1218,43 @@ label {
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
 }
+
 .social-icons a:active,
 .social-icons a:focus,
 .social-icons a:hover {
     color: #fff;
     background-color: #29aafe;
 }
+
 .social-icons.size-sm a {
     line-height: 34px;
     height: 34px;
     width: 34px;
     font-size: 14px;
 }
+
 .social-icons a.facebook:hover {
     background-color: #3b5998;
 }
+
 .social-icons a.twitter:hover {
     background-color: #00aced;
 }
+
 .social-icons a.linkedin:hover {
     background-color: #007bb6;
 }
+
 .social-icons a.dribbble:hover {
     background-color: #ea4c89;
 }
+
 @media (max-width: 767px) {
     .social-icons li.title {
         display: block;
         margin-right: 0;
         font-weight: 600;
     }
-}
+}}
+
 /*Footer*/
