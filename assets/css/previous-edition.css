@@ -34,7 +34,7 @@ a {
 .mainCard {
     display: grid;
     place-items: center;
-    min-height: 100vh;
+    min-height: 60vh;
     color: #fff;
     font-family: 'Playfair Display', serif;
 }
