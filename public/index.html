@@ -1,89 +1,361 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.17.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.17.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.17.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <title>Eurolan - 2023</title>
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<body>
+    <div class="main_container_wrapper">
+        <div class="header_container">
+            <div class="header_banner">
+                <div class="header_navbar">
+                    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+                        <div class="container-fluid justify-content-between">
+                            <a class="navbar-brand" href="#">Eurolan</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                                <ul class="navbar-nav" style="--bs-scroll-height: 100px">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Lectures</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Registration</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="events_container">
+                <h1>EVENTS</h1>
+                <div class="event_container_item_wrapper">
+                    <div class="event_container_item">
+                        <img src="./assets/images/icons/medical-icon_i-health-education.svg" alt="">
+                        <span class="event_container_desc">Neural Networks</span>
+                    </div>
+                    <div class="event_container_item">
+                        <img src="./assets/images/icons/uil_science.svg" alt="">
+                        <span class="event_container_desc">Discussion</span>
+                    </div>
+                    <div class="event_container_item">
+                        <img src="./assets/images/icons/ph_tree-structure-bold.svg" alt="">
+                        <span class="event_container_desc">Structure</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about_container">
+                <div class="all">
+                    <div class="lefter">
+                        <div class="text">Hosting</div>
+                    </div>
+                    <div class="left">
+                        <div class="text">Web Design</div>
+                    </div>
+                    <div class="center">
+                        <div class="explainer"><span>About Menu</span></div>
+                        <div class="text">Frontend Development</div>
+                    </div>
+                    <div class="right">
+                        <div class="text">Backend Development</div>
+                    </div>
+                    <div class="righter">
+                        <div class="text">SEO</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lecturers_container">
+                <h1>LECTURERS</h1>
+                <div class="container">
+                    <div class="carousel">
+                        <div class="item a">
+                            <img src="http://placehold.it/350x250">
+                            <h3>Bacon ipsum dolor</h3>
+                            <p class="text1">Bacon ipsum dolor amet boudin chuck alcatra salami short loin. T-bone
+                                sausage ball tip frankfurter, hamburger boudin shoulder ground round spare ribs pork
+                                belly fatback jowl. Filet mignon meatloaf rump salami bresaola. </p>
+                        </div>
+                        <div class="item b">
+                            <img src="http://placehold.it/350x250">
+                            <h3>Bacon ipsum dolor</h3>
+                            <p class="text2 hidden">Bacon ipsum dolor amet boudin chuck alcatra salami short loin.
+                                T-bone sausage ball tip frankfurter, hamburger boudin shoulder ground round spare ribs
+                                pork belly fatback jowl. Filet mignon meatloaf rump salami bresaola. </p>
+                        </div>
+                        <div class="item c">
+                            <img src="http://placehold.it/350x250">
+                            <h3>Bacon ipsum dolor</h3>
+                            <p class="text3 hidden">Bacon ipsum dolor amet boudin chuck alcatra salami short loin.
+                                T-bone sausage ball tip frankfurter, hamburger boudin shoulder ground round spare ribs
+                                pork belly fatback jowl. Filet mignon meatloaf rump salami bresaola. </p>
+                        </div>
+                        <div class="item d">
+                            <img src="http://placehold.it/350x250">
+                            <h3>Bacon ipsum dolor</h3>
+                            <p class="text4 hidden">Bacon ipsum dolor amet boudin chuck alcatra salami short loin.
+                                T-bone sausage ball tip frankfurter, hamburger boudin shoulder ground round spare ribs
+                                pork belly fatback jowl. Filet mignon meatloaf rump salami bresaola. </p>
+                        </div>
+                        <div class="item e">
+                            <img src="http://placehold.it/350x250">
+                            <h3>Bacon ipsum dolor</h3>
+                            <p class="text5 hidden">Bacon ipsum dolor amet boudin chuck alcatra salami short loin.
+                                T-bone sausage ball tip frankfurter, hamburger boudin shoulder ground round spare ribs
+                                pork belly fatback jowl. Filet mignon meatloaf rump salami bresaola. </p>
+                        </div>
+                        <div class="item f">
+                            <img src="http://placehold.it/350x250">
+                            <h3>Bacon ipsum dolor</h3>
+                            <p class="text6 hidden">Bacon ipsum dolor amet boudin chuck alcatra salami short loin.
+                                T-bone sausage ball tip frankfurter, hamburger boudin shoulder ground round spare ribs
+                                pork belly fatback jowl. Filet mignon meatloaf rump salami bresaola. </p>
+                        </div>
+                        <div class="item g">
+                            <img src="http://placehold.it/350x250">
+                            <h3>Bacon ipsum dolor</h3>
+                            <p class="text7 hidden">Bacon ipsum dolor amet boudin chuck alcatra salami short loin.
+                                T-bone sausage ball tip frankfurter, hamburger boudin shoulder ground round spare ribs
+                                pork belly fatback jowl. Filet mignon meatloaf rump salami bresaola. </p>
+                        </div>
+                        <div class="item h">
+                            <img src="http://placehold.it/350x250">
+                            <h3>Bacon ipsum dolor</h3>
+                            <p class="text8 hidden">Bacon ipsum dolor amet boudin chuck alcatra salami short loin.
+                                T-bone sausage ball tip frankfurter, hamburger boudin shoulder ground round spare ribs
+                                pork belly fatback jowl. Filet mignon meatloaf rump salami bresaola. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="next"></div>
+                <div class="prev"></div>
+            </div>
+
+            <div class="sponsors_container_wrapper">
+                <h1>SPONSORS</h1>
+
+                <div class="sponsors_container">
+                    <div class="hexagon-item">
+                        <div class="hex-item">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="hex-item">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <a class="hex-content">
+                            <span class="hex-content-inner">
+                                <span class="icon">
+                                    <i class="fa fa-universal-access"></i>
+                                </span>
+                                <span class="title">Sponsors</span>
+                            </span>
+                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                                    fill="#1e2530"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="hexagon-item">
+                        <div class="hex-item">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="hex-item">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <a class="hex-content">
+                            <span class="hex-content-inner">
+                                <span class="icon">
+                                    <i class="fa fa-universal-access"></i>
+                                </span>
+                                <span class="title">Sponsors</span>
+                            </span>
+                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                                    fill="#1e2530"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="hexagon-item">
+                        <div class="hex-item">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="hex-item">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <a class="hex-content">
+                            <span class="hex-content-inner">
+                                <span class="icon">
+                                    <i class="fa fa-universal-access"></i>
+                                </span>
+                                <span class="title">Sponsors</span>
+                            </span>
+                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                                    fill="#1e2530"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="hexagon-item">
+                        <div class="hex-item">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="hex-item">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <a class="hex-content">
+                            <span class="hex-content-inner">
+                                <span class="icon">
+                                    <i class="fa fa-universal-access"></i>
+                                </span>
+                                <span class="title">Sponsors</span>
+                            </span>
+                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                                    fill="#1e2530"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="hexagon-item">
+                        <div class="hex-item">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="hex-item">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <a class="hex-content">
+                            <span class="hex-content-inner">
+                                <span class="icon">
+                                    <i class="fa fa-universal-access"></i>
+                                </span>
+                                <span class="title">Sponsors</span>
+                            </span>
+                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                                    fill="#1e2530"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <div class="footer_container">
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h6>About</h6>
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                            accusamus ad adipisci animi architecto aspernatur atque aut autem consectetur
+                            deleniti, dignissimos doloremque dolores doloribus ea earum eius expedita id illo
+                            impedit inventore ipsa iure laborum magnam maiores minus modi nemo neque nesciunt
+                            numquam odit perferendis provident quas, quasi quos sapiente similique vitae.
+                            Accusamus accusantium alias aliquam animi consectetur corporis cupiditate, debitis
+                            delectus deserunt dicta error excepturi fugiat, harum id, impedit incidunt iste
+                            labore laborum magni natus nihil nisi perferendis praesentium quas qui quia
+                            quibusdam quos ratione rem soluta totam ullam velit voluptates! Illo iure minus
+                            quaerat unde voluptatem? Consequuntur, quae!</p>
+                    </div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Categories</h6>
+                        <ul class="footer-links">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </div>
+
+
+                    <!-- <div class="col-xs-6 col-md-3">
+                                <ul class="social-icons">
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div> -->
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
 </html>
