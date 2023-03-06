@@ -31,10 +31,7 @@ a {
     box-sizing: border-box;
 }
 
-.mainCard {
-    display: grid;
-    place-items: center;
-    min-height: 60vh;
+.previous-card-cont {
     color: #fff;
     font-family: 'Playfair Display', serif;
 }

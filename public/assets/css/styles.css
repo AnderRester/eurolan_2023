@@ -23,6 +23,7 @@
 
 body {
     color: #e7e7e7;
+    background-color: #1c1c1c !important;
     overflow-x: hidden !important;
 }
 
@@ -55,20 +56,15 @@ a {
     color: #91deff;
 }
 
-.event_data {
-}
-
 #logoImg {
     width: 70px;
     height: 70px;
 }
 /* Events container */
 .events_container {
-    font-size: 34px;
-    height: 300px;
+    font-size: 24px;
     width: 100%;
     text-align: center;
-    background-color: #1c1c1c;
     overflow-x: hidden !important;
 }
 
@@ -94,13 +90,14 @@ a {
 }
 
 .event_container_item img {
-    width: 50px;
-    height: auto;
+    height: 100px;
+    width: auto;
 }
 
 /* Events container */
 
 /* About Container */
+
 .about_container {
     font-family: 'Raleway', sans-serif;
     background-image: radial-gradient(circle at center, #899dc4, #495d84);
@@ -201,7 +198,7 @@ a {
 
 .center {
     opacity: 1;
-    background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/app_window-512.png);
+    background-image: url(https://cdn2.iconfinder.com/data/icons/education-and-learning-30/66/Educational_Grants-256.png);
 }
 
 .right {
@@ -246,6 +243,13 @@ a {
 
 .ref::first-letter {
     font-size: 12px;
+}
+
+.about_card_styles {
+    background-color: #6d6d6d !important;
+}
+.text_info_cont {
+    color: #ffffff;
 }
 
 /* About Container */
