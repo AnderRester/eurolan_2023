@@ -812,7 +812,7 @@ label {
 .hexagon-item {
     cursor: pointer;
     width: 200px;
-    height: 173px;
+    height: 174px;
     float: left;
     margin-left: -29px;
     z-index: 0;
@@ -866,6 +866,33 @@ label {
     -ms-transform: scale(0.97);
     -o-transform: scale(0.97);
     transform: scale(0.97);
+}
+
+.hexagon-item:hover .hex-content img {
+    -webkit-transform: scale(0.97);
+    -moz-transform: scale(0.97);
+    -ms-transform: scale(0.97);
+    -o-transform: scale(0.97);
+    transform: scale(0.97);
+}
+
+.hexagon-item:hover .hex-content .hex-figure {
+    -webkit-transform: scale(0.97);
+    -moz-transform: scale(0.97);
+    -ms-transform: scale(0.97);
+    -o-transform: scale(0.97);
+    transform: scale(0.97);
+}
+
+.hex-figure {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.sponsor-image-1 {
+    background-image: url(../images/pit.png);
 }
 
 .page-home .hexagon-item:nth-last-child(1),
@@ -964,9 +991,10 @@ label {
 
 .hex-content {
     color: #fff;
-    display: block;
+    display: flex;
     height: 180px;
-    margin: 0 auto;
+    margin: -3px auto;
+    /* margin: 0 auto; */
     position: relative;
     text-align: center;
     transform: rotate(-30deg);
