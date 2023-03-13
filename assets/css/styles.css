@@ -298,8 +298,13 @@ a {
     padding-top: 3%;
 }
 
+.img-container {
+    height: 230px;
+}
+
 img {
-    width: 70%;
+    width: 200px;
+    height: auto;
 }
 
 .hidden {
@@ -852,7 +857,7 @@ label {
 
 .hexagon-item:hover .hex-item div::before,
 .hexagon-item:hover .hex-item div::after {
-    background-color: #ff0037;
+    background-color: #77d2f8;
 }
 
 .hexagon-item:hover .hex-content svg {
