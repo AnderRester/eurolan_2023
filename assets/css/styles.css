@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-.lectorsImages{
+.lectorsImages {
     width: 200px;
     height: 200px;
 }
 .header_banner {
-    background-image: url('../images/banner_bg_usarb.jpg');
+    background-image: url('../images/bg.jpg');
     background-color: #01000a;
     /* width: 100%; */
     /* height: auto; */
@@ -996,8 +996,8 @@ label {
     color: #fff;
     display: flex;
     height: 180px;
-    margin: -3px auto;
-    /* margin: 0 auto; */
+    /* margin: -3px auto; */
+    margin: 0 auto;
     position: relative;
     text-align: center;
     transform: rotate(-30deg);
