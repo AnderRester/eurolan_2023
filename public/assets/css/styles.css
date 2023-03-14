@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap%27');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 .lectorsImages {
     width: 200px;
@@ -49,7 +51,6 @@ a {
 .event_name {
     font-size: 40px;
     font-weight: bold;
-    padding: 2% auto 2% 1%;
 }
 
 .event_name,
@@ -102,10 +103,7 @@ a {
 /* About Container */
 
 .about_container {
-    font-family: 'Raleway', sans-serif;
-    background-image: radial-gradient(circle at center, #899dc4, #495d84);
     background-size: cover;
-    background-repeat: no-repeat;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -118,6 +116,7 @@ a {
     display: flex;
     perspective: 10px;
     transform: perspective(300px) rotateX(20deg);
+    text-align: center;
     will-change: perspective;
     perspective-origin: center center;
     transition: all 1.3s ease-out;
@@ -142,6 +141,7 @@ a {
 
 .all:hover .explainer {
     opacity: 0;
+
 }
 
 .left,
@@ -214,8 +214,8 @@ a {
 }
 
 .explainer {
-    font-weight: 300;
-    font-size: 2rem;
+    font-weight: 500;
+    font-size: 1.8rem;
     color: #fff;
     transition: all 0.6s ease;
     width: 100%;

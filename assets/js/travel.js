@@ -1,30 +1,31 @@
-import * as gsap from 'https://cdn.skypack.dev/gsap@3.10.4';
-enterView({
-    selector: 'section',
-    enter: function (el) {
-        el.classList.add('entered');
-    },
+var typing = new Typed(".text_title", {
+  strings: ["", "TRAVEL <span>/ VISA</span>"],
+  typeSpeed: 70,
 });
 
-var frameNumber = 0, // start video at frame 0
-    // lower numbers = faster playback
-    playbackConst = 1000,
-    // get page height from video duration
-    setHeight = document.getElementById('set-height'),
-    // select video element
-    vid = document.getElementById('v0');
-// var vid = $('#v0')[0]; // jquery option
+var typing = setTimeout(() => {
+  new Typed(".text_header", {
+    strings: ["", "VISA INFORMATION:"],
+    typeSpeed: 70,
+  });
+}, 1000);
 
-// dynamically set the page height according to video length
-vid.addEventListener('loadedmetadata', function () {
-    setHeight.style.height = Math.floor(vid.duration) * playbackConst + 'px';
-});
+var typing = setTimeout(() => {
+  new Typed(".text_info_header", {
+    strings: [
+      "",
+      "We encourage and welcome delegates from around the globe to take part in Eurolan 2023.",
+    ],
+    typeSpeed: 30,
+  });
+}, 2800);
 
-// Use requestAnimationFrame for smooth playback
-function scrollPlay() {
-    var frameNumber = window.pageYOffset / playbackConst;
-    vid.currentTime = frameNumber;
-    window.requestAnimationFrame(scrollPlay);
-}
-
-window.requestAnimationFrame(scrollPlay);
+var typing = setTimeout(() => {
+  new Typed(".text_info", {
+    strings: [
+      "",
+      'The list of countries whose citizens do not need visa for entry on the territory of the Republic of Moldova, as well as information on visa requirements to enter the Republic of Moldova, can be found on: <a href="https://mfa.gov.md/entry-visas-moldova">mfa.gov.md/entry-visas-moldova/</a> If you are a national or citizen of one of the countries who require visa for entrance to the Republic of Moldova, do not leave this for the last moment as visas can take time to be issued.',
+    ],
+    typeSpeed: 25,
+  });
+}, 5500);
