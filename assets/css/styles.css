@@ -41,7 +41,7 @@ a {
     justify-content: start;
     height: 70%;
     padding: 10% 0 10% 10%;
-    -webkit-box-shadow: inset 0px 0px 55px 59px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: inset 0 0 55px 59px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: inset 0px 0px 55px 59px rgba(0, 0, 0, 0.75);
     box-shadow: inset 0px 0px 55px 59px rgba(0, 0, 0, 0.75);
 }
@@ -49,7 +49,6 @@ a {
 .event_name {
     font-size: 40px;
     font-weight: bold;
-    padding: 2% auto 2% 1%;
 }
 
 .event_name,
