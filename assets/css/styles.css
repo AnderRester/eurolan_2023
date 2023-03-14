@@ -21,7 +21,7 @@
 .header_navbar {
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: #000000a6;
+    background-color: #000000c1;
 }
 
 body {
@@ -1170,7 +1170,6 @@ label {
 /*Footer*/
 .site-footer {
     background-color: #26272b;
-    padding: 45px 0 20px;
     font-size: 15px;
     line-height: 24px;
     color: #737373;

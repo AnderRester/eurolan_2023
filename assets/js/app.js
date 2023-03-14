@@ -33,6 +33,3 @@ function rotate(e) {
         transform: 'rotateY(' + currdeg + 'deg)',
     });
 }
-
-// bt1 = document.querySelector('.test_button');
-// bt1.addEventListener('click', () => alert('works'));
