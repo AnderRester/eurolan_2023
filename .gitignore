@@ -64,3 +64,8 @@ node_modules/
 
 # dotenv environment variables file
 .env
+.idea/workspace.xml
+.idea/shelf/Uncommitted_changes_before_Update_at_14_03_2023_16_08__Changes_.xml
+.idea/shelf/Uncommitted_changes_before_Update_at_14_03_2023_16_08_[Changes]/shelved.patch
+.idea/shelf/Uncommitted_changes_before_Update_at_14_03_2023_16_08_[Changes]/shelved.patch
+.gitignore
