@@ -8,7 +8,7 @@
     height: 200px;
 }
 .header_banner {
-    background-image: url('../images/bg-2.jpg');
+    background-image: url('../images/bg_nort_1.jpeg');
     background-color: #01000a;
     /* width: 100%; */
     /* height: auto; */
@@ -44,6 +44,11 @@ a {
     -webkit-box-shadow: inset 0px 0px 55px 59px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: inset 0px 0px 55px 59px rgba(0, 0, 0, 0.75);
     box-shadow: inset 0px 0px 55px 59px rgba(0, 0, 0, 0.75);
+}
+
+.banner-text > div {
+    background-color: #000000a9;
+    padding: 25px;
 }
 
 .event_name {
