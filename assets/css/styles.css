@@ -112,7 +112,6 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
-    display: flex;
     justify-content: center;
     align-items: center;
     background: radial-gradient(ellipse at bottom, #1b2735, #090a0f);
