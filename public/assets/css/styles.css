@@ -8,7 +8,7 @@
     height: 200px;
 }
 .header_banner {
-    background-image: url('../images/bg_nort_1.jpeg');
+    background-image: url('../images/bg_nort_3.jpeg');
     background-color: #01000a;
     /* width: 100%; */
     /* height: auto; */
@@ -61,7 +61,7 @@ a {
 .event_header,
 .event_text,
 .event_data {
-    color: #91deff;
+    color: #a9e5ff;
 }
 
 #logoImg {
